@@ -112,6 +112,10 @@
         title = null;
       }
 
+      if(_getOptions().preProcessMessage){
+          message = preProcessMessage(message);
+      }
+
       return _notify({
         iconClass: type,
         message: message,
@@ -307,6 +311,7 @@
       onHidden: null,
       onShown: null,
       onTap: null,
+      preProcessMessage: null,
       positionClass: 'toast-top-right',
       preventDuplicates: false,
       preventOpenDuplicates: false,
