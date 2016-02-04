@@ -113,7 +113,7 @@
       }
 
       if(_getOptions().preProcessMessage){
-          message = preProcessMessage(message);
+          message = _getOptions().preProcessMessage(message, title, type);
       }
 
       return _notify({
