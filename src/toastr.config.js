@@ -21,6 +21,7 @@
       onHidden: null,
       onShown: null,
       onTap: null,
+      preProcessMessage: null,
       positionClass: 'toast-top-right',
       preventDuplicates: false,
       preventOpenDuplicates: false,
